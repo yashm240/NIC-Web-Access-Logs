@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB ACCESS LOGS</title>
+    <link rel="stylesheet" href="MyCSS.css/stylesheet.css">
+</head>
+<body>
+    <div style="background-color: #0096FF;height: 150px; border: solid;">
+       <h1 class="heading">WEB ACCESS LOGS</h1>
+       
+    </div>
+    <hr>
+             
+                <ul class="navbar">
+                  <li><h2 class="dashboard">DASHBOARD</h2></li>
+                    <hr color="black">
+                   <li><a href="ip.html">IP</a></li>
+                   <li><a href="website.html">WEBSITE</a></li>
+                   <li><a href="analytics.html">ANALYTICS</a></li>
+                 </ul>
+                 <div class="tcon">
+             <canvas id="Chart1" style="width:100%;max-width:600px"></canvas>
+                
+           
+<script>
+var xValues = ["Head", "post", "get"];
+var yValues = [550, 490, 400];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797"
+];
+
+new Chart("Chart1", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "TYPE OF REQUESTS COUNT"
+    }
+  }
+});
+</script>
+             </div>       
+
+
+             <div class="tcon2">
+                <canvas id="Chart2" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["404", "301", "403", "402", "401"];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = ["#5BB318", "#5BB318","#5BB318","#5BB318"];
+
+new Chart("Chart2", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Status Code Count"
+    }
+  }
+});
+</script>
+             </div>
+
+             <hr>
+
+             <ul class="contact">
+                <li><h2 class="cont">CONTACT US</h2></li>
+                  <hr color="black">
+                 <li><a href="https://nic-cert.nic.in/">WEBSITE</a></li>
+                 <li><a href="https://www.google.co.in/">MAIL</a></li>
+                 <li><a href="https://www.instagram.com/nicmeity/?hl=en">INSTAGRAM</a></li>
+               </ul>
+
+
+
+             <div class="mcon">
+
+                <canvas id="Chart3" style="width:100%;max-width:500px"></canvas>
+
+<script>
+var xValues = [9,10,11,12,1,2,3,4,5,6,7];
+var yValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+new Chart("Chart3", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "#5BB318",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    },
+    title: {
+      display: true,
+      text: "No. Of Requests In A Day"
+    }
+  }
+});
+</script>
+             </div>
+             
+
+             <table class="date" cellspacing="40px" >
+                <tr>
+                    <td>TIME PERIOD <br> <hr noshade=""></td>
+            
+                </tr>
+                
+                <tr>
+                    <td>
+                        START DATE
+                    </td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       END DATE
+                    </td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+             </table>
+
+             <div class="bottom-container">
+
+                <p class="copyright">© 2022 NIC@WEB ACCESS LOGS</p>
+                <button class="btn" onclick="myFunction()">Toggle dark mode</button>
+
+             </div>
+
+            
+
+           
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+                
+          
+</body>
+</html>

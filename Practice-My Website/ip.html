@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB ACCESS LOGS</title>
+    <link rel="stylesheet" href="MyCSS.css/stylesheet.css">
+</head>
+<body>
+    <div style="background-color: #0096FF;height: 150px; border: solid;">
+       <h1 class="heading">IP ADDRESS</h1>
+       <h2 class="sel"><label for="ip add">SELECT AN IP ADDRESS</label></h2>
+       <select class="sct" name="ip" id="add">
+        <option value="0">Select</option>
+        <option value="1">IP add 1</option>
+        <option value="2">IP add 2</option>
+        <option value="3">IP add 3</option>
+       </select>
+    </div>
+    <hr>
+             
+                <ul class="navbar">
+                  <li><h2 class="dashboard">DASHBOARD</h2></li>
+                    <hr color="black">
+                   <li><a href="index.html">DASHBOARD</a></li>
+                   <li><a href="website.html">WEBSITE</a></li>
+                   <li><a href="analytics.html">ANALYTICS</a></li>
+                 </ul>
+                 <div class="tcon">
+             <canvas id="Chart1" style="width:100%;max-width:600px"></canvas>
+                
+           
+<script>
+var xValues = ["Head", "post", "get"];
+var yValues = [100, 800, 200];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797"
+];
+
+new Chart("Chart1", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "TYPE OF REQUESTS COUNT"
+    }
+  }
+});
+</script>
+             </div>       
+
+
+             <div class="tcon2">
+                <canvas id="Chart4" style="width:100%;max-width:600px"></canvas>
+
+                <script>
+                var xValues = ["1", "2", "3", "4", "5","6","7","8","10","10"];
+                var yValues = [39,46,49,57,65,81,92,101,107,110];
+                var barColors = ["#5BB318","#5BB318","#5BB318","#5BB318","#5BB318","#5BB318","#5BB318","#5BB318","#5BB318","#5BB318"];
+                
+                new Chart("Chart4", {
+                  type: "bar",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                  options: {
+                    legend: {display: false},
+                    title: {
+                      display: true,
+                      text: "top 10 paths visited"
+                    }
+                  }
+                });
+                </script>
+             </div>
+
+             <hr>
+
+             <ul class="contact">
+                <li><h2 class="cont">CONTACT US</h2></li>
+                  <hr color="black">
+                 <li><a href="https://nic-cert.nic.in/">WEBSITE</a></li>
+                 <li><a href="https://www.google.co.in/">MAIL</a></li>
+                 <li><a href="https://www.instagram.com/nicmeity/?hl=en">INSTAGRAM</a></li>
+               </ul>
+
+
+
+             <div class="mcon">
+
+                <canvas id="Chart5" style="width:100%;max-width:500px"></canvas>
+
+<script>
+var xValues = [12,13,14,15,16];
+var yValues = [22,24,63,12,90];
+
+new Chart("Chart5", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "#5BB318",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:106}}],
+    },
+    title: {
+      display: true,
+      text: "No. Of hits over the given period"
+    }
+  }
+});
+</script>
+             </div>
+
+             <table class="date" cellspacing="40px" >
+                <tr>
+                    <td>TIME PERIOD <br> <hr noshade=""></td>
+            
+                </tr>
+                
+                <tr>
+                    <td>
+                        START DATE
+                    </td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       END DATE
+                    </td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+             </table>
+
+             <div class="bottom-container">
+
+                <p class="copyright">© 2022 NIC@WEB ACCESS LOGS</p>
+                <button class="btn" onclick="myFunction()">Toggle dark mode</button>
+
+             </div>
+
+           
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+                
+          
+</body>
+</html>

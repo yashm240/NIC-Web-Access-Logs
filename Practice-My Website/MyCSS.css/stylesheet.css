@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    background-color: #F1F1F1;
+    
+}
+.heading{
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    font-size:xx-large ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+    width: 14rem;
+    margin-left:0 ;
+    background-color: #00D7FF;
+    margin-top: 0;
+    border: solid;
+}
+
+li{
+    width: 70px;
+    height: 70px;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a:hover{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.dashboard{
+    margin-top: 0;
+    color: white;
+}
+
+.dash{
+    width: 10px;
+}
+#Chart1{
+    position:absolute;
+    top: 180px;
+    left: 200px;
+}
+
+#Chart2{
+    position: absolute;
+    top: 180px;
+    left: 830px;
+}
+#Chart3{
+    position:absolute;
+    top: 550px;
+    left: 300px;
+    
+}
+.contact{
+    width: 14rem;
+    margin-left:0 ;
+    background-color: #00D7FF;
+    margin-top: 0;
+    border: solid;
+}
+.cont{
+    color: white;
+}
+
+.bottom-container{
+    background-color:#0096FF ;
+    padding: 20px 0 20px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+
+.copyright{
+    color: #EAF6F6;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .date{
+    position: absolute;
+    right: 250px;
+    top: 560px;
+   background-color: #00D7FF;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .dark-mode {
+    background-color: rgba(0, 0, 0, 0.812);
+    color: white;
+    
+  }
+  
+
+  .btn {
+    position: absolute;
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999A);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999A);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999A);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999A);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999A);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+  
+.sel{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background-color: #00D7FF;
+    border: solid;
+}
+.sct{
+    position: absolute;
+    right: 10px;
+}
+
+#Chart4{
+        position: absolute;
+        top: 180px;
+        left: 800px;
+}
+
+#Chart5{
+    position:absolute;
+    top: 550px;
+    left: 300px;
+    
+}
+
+#Chart6{
+    position:absolute;
+    top: 180px;
+    left: 230px;
+}
